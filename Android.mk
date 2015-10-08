@@ -1,5 +1,3 @@
-ifeq ($(call is-vendor-board-platform,QCOM),true)
-
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -11,5 +9,3 @@ LOCAL_C_INCLUDES+= $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_MODULE_PATH := $(TARGET_OUT_DATA)/mmc-utils
 include $(BUILD_EXECUTABLE)
-
-endif # QCOM
